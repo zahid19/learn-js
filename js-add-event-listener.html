@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" class="button" id="load" value="Load">
+    <script>
+    const button = document.getElementById('load');
+    button.addEventListener('click', updateButton);
+    function updateButton() 
+    {
+        if (button.value === 'Load') 
+        {
+            button.value = 'Clear';
+        }
+        else 
+        {
+            button.value = 'Load';
+        }
+    }
+    </script>    
+</body>
+</html>
